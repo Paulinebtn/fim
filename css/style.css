@@ -1,0 +1,80 @@
+html {
+	font-family: 'avenir';
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+/* Page 1 : ACCUEIL */
+
+.accueil {
+	height: 100%;
+	background: url(../img/accueil.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil form {
+	background-color: rgba(255, 255, 255, 0.85);
+	width: 55%;
+	height: 80%;
+	border-radius: 2%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.accueil input {
+	outline: none;
+	width: 60%;
+	height: 60px;
+	border: 1px solid grey;
+	border-radius: 7px;
+	padding-left: 10px;
+	font-size: 14px;
+	margin-bottom: 60px; 
+}
+
+.accueil h1 {
+	font-family: 'quicksand';
+	font-size: 50px;
+	margin-top: 60px;
+	color: #191B21;
+}
+
+.accueil input::-webkit-input-placeholder {
+	color: #C8C8CA;
+	font-weight: 300;
+}
+
+.accueil input:focus {
+	border: 1px solid #60A9FF;
+}
+
+.accueil button {
+	width: 62%;
+	padding: 24px;
+	background-color: #60A9FF;
+	color: white;
+	font-size: 15px;
+	border: 0;
+	border-radius: 7px;
+	outline: none;
+}
+
+.accueil p {
+	width: 62%;
+}
+
+.accueil p a {
+	color: #191B21;
+	text-decoration: none;
+}
+
+/* Page 2 : */
