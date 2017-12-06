@@ -245,12 +245,117 @@ body {
 }
 
 .contenu-corps img {
-	width: 32px;
-	height: 32px;
+	width: 22px;
+	height: 22px;
+	padding-top: 3px;
+	padding-bottom: 6px;
 }
 
 .ligne {
 	display: flex;
+	justify-content: space-between;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-bottom: 4%;
 }
 
+.ligne > div {
+	background-color: #B3CFF0;
+	width: 22%;
+	height: 120px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.ligne > div > div:first-child {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.ligne > div > div:nth-child(3) {
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding-bottom: 3px;
+
+}
+
+.ligne > div > div:last-child {
+	font-size: 11px;
+	font-weight: 200;
+}
+
+.contenu-corps > .ligne:first-child {
+	margin-top: 4%;
+}
+
+/* menu droit */
+
+.titre-event {
+	height: 60px;
+	border-bottom: 1px solid #e8eaef;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contenu-event > div > div {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+}
+
+.contenu-event > div > div > div:nth-child(2) {
+	font-size: 13px;
+	color: #777889;
+	width: 60%;
+	padding-left: 3px;
+}
+
+.contenu-event > div > div > div:first-child {
+	font-weight: 600;
+	font-size: 14px;
+	width: 20%;
+	text-align: center;
+	color: #373843
+}
+
+.contenu-event > div > div > div:last-child {
+	font-weight: 500;
+	font-size: 12px;
+	width: 20%;
+	padding-right: 8px;
+	color: #373843;
+	text-align: right;
+}
+
+.chute-event {
+	background-color: #FF0F4F;
+}
+
+.chute-event > img {
+	height: 24px;
+}
+
+.chute-event > div {
+	color: white !important;
+}
+
+.zzz {
+	height: 15px;
+}
+
+.cacher {
+	display: none;
+}
+
+/* page 3 : */
 
