@@ -8,7 +8,7 @@ body {
 	height: 100%;
 }
 
-/* PAGE 1 : ACCUEIL */
+/* ------------ PAGE 1 : ACCUEIL --------------- */
 
 .accueil {
 	height: 100%;
@@ -77,9 +77,203 @@ body {
 	text-decoration: none;
 }
 
-/* PAGE 2 : ACTIVITE EN COURS */
+/* ---------- PAGE 2 : ACTIVITE EN COURS -------------- */
+
+
+/* POP-UP*/
+
+	
+/* pop-up alerte */
+	
+.pop-up {
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.6);
+	/*display : flex;*/
+	display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+#pop-up01 {
+	display: none;
+}
+
+.pop-up > div {
+	background-color: #373843;
+	height: 450px;
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 10px;
+}
+
+.pop-up img {
+	height: 70px;
+	width: 70px;
+}
+
+.onglet {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.onglet > div {
+	color: white;
+	font-size: 17px;
+	width: 34%;
+	height: 60px;
+	text-align: center;
+	background-color: #FF0F4F;
+	justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.onglet > div:first-child {
+	background-color: #373843;
+	/* width: 100%;  A AJOUTER POUR 1 ONGLET */
+}
+
+.onglet > div:nth-child(2) {
+	border-radius: 0px 0px 8px 0px;
+}
+
+.pop-up > div > div:nth-child(2) {
+	color: #FF0F4F;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.pop-up > div > div:nth-child(4) {
+	font-size: 22px;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.pop-up > div > div:nth-child(5) {
+	width: 100%;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+}
+
+.pop-up button {
+	width: 34%;/* A AJOUTER POUR 3 ONGLETS */
+	height: 60px;
+	border-radius: 8px;
+	outline: none;
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+#prise-charge {
+	background-color: #FF0F4F;
+	border: 0;
+	margin-right: 3%;
+}
+
+#occupe {
+	border: 1px solid white;
+	background-color: transparent;
+	margin-left: 3%;
+}
+
+
+/* pop-up formulaire */
+
+#pop-up02 {
+	display: none;/*pour cacher*/
+}
+
+#pop-up02 form {
+	background-color: #373843;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: white;
+	font-weight: 200;
+	margin-top: 6%;
+}
+
+#pop-up02 > form > div {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#pop-up02 > form > div:nth-child(3) {
+	display: flex;
+	flex-direction: column !important;
+	align-items: baseline !important;
+	
+}
+
+#pop-up02 textarea {
+	width: 97%;
+	background-color: #4D4E58;
+	border: 0;
+	  resize: none;
+	  height: 130px;
+	  color: white;
+	  font-size: 15px;
+	  padding: 10px;
+	  border-radius: 5px;
+}
+
+#pop-up02 > form > input {
+	height: 50px;
+    width: 46%;
+    margin-top: 5%;
+    margin: auto;
+    border: 0;
+    background-color: #FF0F4F;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+#pop-up02 input:focus { 
+    outline: none !important;
+}
+
+#pop-up02 textarea:focus {
+	outline: none !important;
+}
+
+#pop-up02 > form > div > div {
+	width: 34%;
+    justify-content: space-between;
+    display: flex;
+        align-items: center;
+}
+
+#pop-up02 input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+}
+#pop-up02 p {
+	font-size: 16px;
+}
+
+
 
 /* nav */
+
 .page-1 nav {
 	display: flex;
 	justify-content: space-between;
@@ -170,6 +364,8 @@ body {
 	opacity: 0.5;
 }
 
+
+
 /* menu gauche */
 
 .page-1 aside {
@@ -224,6 +420,8 @@ body {
 	width: 80%;
 }
 
+
+
 /* corps */
 
 .page-1 article {
@@ -239,9 +437,8 @@ body {
 	flex-direction: column;
 }
 
-.contenu-event {
-	width: 25%;
-	border-left: 1px solid #e8eaef;
+.search-barre {
+	display: none;
 }
 
 .contenu-corps img {
@@ -289,11 +486,44 @@ body {
 	font-weight: 200;
 }
 
-.contenu-corps > .ligne:first-child {
+#ligne-1 {
 	margin-top: 4%;
 }
 
+.color-chute {
+	background-color: #FF0F4F !important;
+}
+
+.color-deambulation {
+	background-color: #43D98E !important;
+}
+
+.color-levee {
+	background-color: #698ADE !important;
+}
+
+.color-sortie {
+	background-color: #9B85E6 !important;
+}
+
+.color-sdb {
+	background-color: #E876DF !important;
+}
+
+.color-intrusion {
+	background-color: #FFC15D !important;
+}
+
+
 /* menu droit */
+
+.contenu-event {
+	width: 25%;
+	border-left: 1px solid #e8eaef;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .titre-event {
 	height: 60px;
@@ -357,5 +587,34 @@ body {
 	display: none;
 }
 
-/* page 3 : */
+#btn-alert {
+	display: none; /*BOUTON RETOUR SUR EVENT*/
+}
+.contenu-event > div:last-child {
+	/*display: flex;*/
+	flex-direction: row-reverse;
+}
+
+.btn-rose {
+	outline: none;
+	width: 32%;
+    height: 66px;
+    background-color: #FF0F4F;
+    border-radius: 50%;
+    border: 0;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    box-shadow: 3px 5px 5px rgba(211,211,211, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-rose img {
+	width: 30px;
+}
+
+
+/* ------------------ page 3 : Journal des event --------------------- */
 

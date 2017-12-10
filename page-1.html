@@ -9,6 +9,49 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="page-1">
+	<div class="pop-up">
+		<div id="pop-up01">
+			<div class="onglet">
+				<div class="alerte01">Chambre 01 00:00</div>
+				<div class="alerte02">Chambre 02 00:00</div>
+				<div class="alerte03">Chambre 03 00:00</div>
+			</div>
+			<div>alerte</div>
+			<img src="icon/chute.svg">
+			<div>chute</div>
+			<div>
+				<button id="prise-charge">Je prend en charge</button>
+				<button id="occupe">Je suis occupée</button>
+			</div>
+		</div>
+		<div id="pop-up02">
+			<form>
+				<div>
+					<p>La personne est-elle blaissé?</p>
+					<div>
+						<input type="radio" name="choix1" value="oui">
+						<label>Oui</label>
+						<input type="radio" name="choix1" value="non">
+						<label>Non</label>
+					</div>
+				</div>
+				<div>
+					<p>Cette personne mérite-elle un suivi médical?</p>
+					<div>
+						<input type="radio" name="choix2" value="oui">
+						<label>Oui</label>
+						<input type="radio" name="choix2" value="non">
+						<label>Non</label>
+					</div>
+				</div>
+				<div>
+					<p>Résumé des faits et des conséquences de la chute :</p>
+					<textarea></textarea>
+				</div>
+				<input type="button" value="Envoyer mon compte rendu">
+			</form>
+		</div>
+	</div>
 	<nav>
 		<div>
 			<h2>FIM</h2>
@@ -53,26 +96,27 @@
 		</aside>
 		<article>
 			<section class="contenu-corps">
-				<div class="ligne">
-					<div>
+				<div class="search-barre">Réponses search</div>
+				<div class="ligne" id="ligne-1">
+					<div class="color-chute">
 						<div>102</div>
 						<img src="icon/chute.svg">
 						<div>Chute</div>
 						<div>Mr Lorem</div>
 					</div>
-					<div>
+					<div class="color-deambulation">
 						<div>102</div>
 						<img src="icon/deambulation.svg">
 						<div>déambulation</div>
 						<div>Mr Lorem</div>
 					</div>
-					<div>
+					<div class="color-sortie">
 						<div>102</div>
 						<img src="icon/sortie.svg">
 						<div>sortie CHBR</div>
 						<div>Mr Lorem</div>
 					</div>
-					<div>
+					<div class="color-intrusion">
 						<div>102</div>
 						<img src="icon/intrusion.svg">
 						<div>intrusion</div>
@@ -80,13 +124,13 @@
 					</div>
 				</div>
 				<div class="ligne">
-					<div>
+					<div class="color-levee">
 						<div>102</div>
 						<img src="icon/levee.svg">
 						<div>levée</div>
 						<div>Mr Lorem</div>
 					</div>
-					<div>
+					<div class="color-sdb">
 						<div>102</div>
 						<img src="icon/sdb.svg">
 						<div>salle de bain</div>
@@ -234,6 +278,9 @@
 						<div class="event">Dans la SDB</div>
 						<div class="heure-event">20h05</div>
 					</div>
+				</div>
+				<div id="btn-alert">
+					<button class="btn-rose"><img src="icon/loudspeaker.svg"></button>
 				</div>
 			</section>
 		</article>
