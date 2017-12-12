@@ -272,7 +272,7 @@ body {
 
 
 
-/* nav */
+/* nav page 1 */
 
 .page-1 nav {
 	display: flex;
@@ -365,8 +365,7 @@ body {
 }
 
 
-
-/* menu gauche */
+/* menu gauche page 1 */
 
 .page-1 aside {
 	background-color: #373843;
@@ -419,7 +418,6 @@ body {
 	padding-left: 10%;
 	width: 80%;
 }
-
 
 
 /* corps */
@@ -617,4 +615,238 @@ body {
 
 
 /* ------------------ page 3 : Journal des event --------------------- */
+
+
+/* nav page 2 */
+
+.page-2 nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 13%;
+	background-color: white;
+}
+
+.page-2 nav div {
+	width: 20%;
+	height: 100%;
+	background-color: #60A9FF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}	
+
+.page-2 nav h2 {
+	margin: 0;
+	color: white;
+	font-family: 'Quicksand';
+	font-size: 35px;
+}
+
+.page-2 nav img {
+	width: 32px;
+	height: 32px;
+}
+
+.page-2 form {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background-color: #F7F8FF;
+}
+
+.page-2 nav i {
+	font-size: 24px;
+	color: #8a8a93;
+	padding-left: 15px;
+}
+
+.page-2 nav input {
+	outline: none;
+	width: 93%;
+	height: 100%;
+	padding-left: 10px;
+	font-size: 18px;
+	background-color: #F7F8FF;
+	border: 0;
+}
+
+.page-2 nav input::-webkit-input-placeholder {
+	color: #8a8a93;
+	font-weight: 200;
+	font-style: italic;
+}
+
+.page-2 nav ul {
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.page-2 nav ul li {
+	list-style-type: none;
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* menu gauche page 2 */
+
+.page-2 aside {
+	background-color: #373843;
+	height: 100%;
+	width: 20%;
+}
+
+.page-2 aside img {
+	width: 32px;
+	height: 32px;
+}
+
+.page-2 aside ul {
+	margin: 0;
+	padding: 0;
+	height: 50%;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.page-2 aside ul li {
+	color: white;
+	list-style-type: none;
+	padding-left: 10%;
+	padding-right: 10%;
+	height: 30%;
+	display: flex;
+	align-items: center;
+}
+
+.page-2 aside ul li:hover {
+	background-color: #191B21;
+	border-right: 4px solid #60A9FF;
+}
+
+.page-2 > main {
+	display: flex;
+	height: 87%;
+}
+
+.page-2 aside ul li a {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page-2 aside ul li span {
+	padding-left: 10%;
+	width: 80%;
+}
+
+/* Corps */
+
+section#calendar {
+		overflow: scroll;
+		width: 80%;
+}
+
+
+.calendar {
+	text-align: center;
+}
+
+h3 {
+	width: 100%;
+    font-size: 16px;
+    padding-left: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+}
+.calendar-dec ul li {
+	list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+ul.days {
+	padding: 0;
+    width: 100%;
+    color: black;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.days li {
+	margin-top: 2%;
+    margin-bottom: 5%;
+    display: inline-block;
+    width: 13%;
+    height: 0;
+    padding: 0 0 4%;
+    font-weight: 300;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 16px;
+}
+
+.days-l1 {
+	padding: 0;
+    width: 100%;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.days-l1 li {
+	margin-top: 2%;
+    margin-bottom: 0.5%;
+    display: inline-block;
+    width: 13%;
+    height: 0;
+    padding: 0 0 4%;
+    font-weight: 300;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 16px;
+}
+
+/*#days ul {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}*/
+
+div#evenements {
+	margin-top: 5%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+div#evenements > div {
+	justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+}
+
+div#evenements > div > p:nth-child(2) {
+	flex: 1;
+	color: grey;
+}
+
+div#evenements > div > p:first-child {
+	min-width: 25%;
+	font-weight: 700;
+}
+
+div#evenements > div > p:nth-child(3) {
+	font-weight: 700;
+}
 
