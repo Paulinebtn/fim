@@ -850,3 +850,128 @@ div#evenements > div > p:nth-child(3) {
 	font-weight: 700;
 }
 
+/* ------------------ page 3 : Données du logement --------------------- */
+.page3-form {
+	width: 80% !important;
+}
+
+/* choisir un résident et une date */
+
+.resident-choix {
+	height: 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: white;
+	box-shadow: 6px 3px 16px #d6dae0;
+}
+
+.resident-choix input {
+	width: 50%;
+	height: 50%;
+	font-size: 15px;
+	color: black;
+	outline: none;
+}
+
+.resident-choix span {
+	padding-right: 10px;
+}
+
+.resident-choix i {
+	color: #373843;
+}
+
+.article-page3 {
+	background-color: #F7F8FF;
+	display: flex;
+	flex-direction: column;
+}
+
+/* choisir la date calendar + période */
+
+.agenda-periode {
+	/*display: flex;*/
+	display: none;
+	height: 45%;
+	background-color: white;
+}
+
+.agenda-periode > div:first-child {
+	width: 70%;
+}
+
+.agenda-periode > div:last-child {
+	background-color: #C5D9EF;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.agenda-periode > div:last-child input {
+	border-radius: 5px;
+	border: 0;
+	height: 30px;
+	width: 80%;
+}
+
+.agenda-periode > div:last-child > div:first-child {
+	padding-top: 20px;
+}
+
+.agenda-periode > div:last-child > div:nth-child(2) {
+	padding-top: 20px;
+	width: 70%;
+}
+.agenda-periode > div:last-child > div:nth-child(2) > div {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	align-items: center;
+}
+
+.agenda-periode > div:last-child > button {
+	font-size: 14px;
+	background-color: #5DA4F8;
+	border: 0;
+	color: white;
+	width: 70%;
+	border-radius: 5px;
+	padding: 10px;
+	outline: none;
+}
+
+/* graphiques */
+
+.graphiques {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.graphiques > div:first-child {
+	background-color: white;
+	height: 40%;
+	width: 98%;
+	border-radius: 5px;
+	margin: auto;
+}
+
+.graphiques > div:last-child {
+	height: 55%;
+	width: 98%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.graphiques > div:last-child > div {
+	background-color:white;
+	border-radius: 5px;
+	width: 49%;
+	
+}
