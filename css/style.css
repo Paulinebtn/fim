@@ -111,6 +111,10 @@ form .button {
 	display: none;
 }
 
+.pop-up-active {
+	display: flex !important;
+}
+
 .pop-up > div {
 	background-color: #373843;
 	height: 450px;
