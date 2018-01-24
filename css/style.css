@@ -57,7 +57,7 @@ body {
 	border: 1px solid #60A9FF;
 }
 
-.accueil button {
+form .button {
 	width: 62%;
 	padding: 24px;
 	background-color: #60A9FF;
