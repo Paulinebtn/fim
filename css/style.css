@@ -1024,3 +1024,403 @@ div#evenements > div > p:nth-child(3) {
 	width: 49%;
 	
 }
+
+/* ------------------ page 4 : Ajout d'un résident --------------------- */
+
+#nav-ajout {
+	background-color: #F7F8FF;
+	width: 80%;
+
+}
+
+
+#nav-ajout ul {
+	width: 100%;
+
+}
+
+#nav-ajout li {
+	width: 33%;
+}
+
+#nav-ajout li a {
+	text-decoration: none;
+	color: black;
+}
+
+#ajout {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 80%;
+}
+
+
+form .sectionform {
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+form .sectionform span {
+	display: flex;
+	align-items: center;
+    margin: 20px;
+}
+
+.sectionform input{
+
+	border: 0;
+	border-bottom: 1px solid grey;
+	width: 200px;
+
+
+}
+
+.sectionform label {
+	text-transform: uppercase;
+
+}
+
+#ajouterform {
+	margin-left: 25px;
+}
+
+.sectionform h2 {
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+
+#numero {
+	
+	width: 20px;
+	padding: 10px;
+	border-top: 1px solid grey;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	border-radius: 10px 10px 10px;
+}
+
+
+/* Range
+   ========================================================================== */
+.range-field {
+  position: relative;
+}
+
+input[type=range],
+input[type=range] + .thumb {
+  cursor: pointer;
+}
+
+input[type=range] {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 15px 0;
+  padding: 0;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range] + .thumb {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  border: none;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  background-color: #60A9FF;
+  margin-left: 7px;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+input[type=range] + .thumb .value {
+  display: block;
+  width: 30px;
+  text-align: center;
+  color: #60A9FF;
+  font-size: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+input[type=range] + .thumb.active {
+  border-radius: 50% 50% 50% 0;
+}
+
+input[type=range] + .thumb.active .value {
+  color: #fff;
+  margin-left: -1px;
+  margin-top: 8px;
+  font-size: 10px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 3px;
+  background: #c2c0c2;
+  border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: #60A9FF;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  margin: -5px 0 0 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+input[type=range] {
+  /* fix for FF unable to apply focus style bug  */
+  border: 1px solid white;
+  /*required for proper track sizing in FF*/
+}
+
+input[type=range]::-moz-range-track {
+  height: 3px;
+  background: #ddd;
+  border: none;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #60A9FF;
+  margin-top: -5px;
+}
+
+input[type=range]:-moz-focusring {
+  outline: 1px solid #fff;
+  outline-offset: -1px;
+}
+
+input[type=range]:focus::-moz-range-track {
+  background: #ccc;
+}
+
+input[type=range]::-ms-track {
+  height: 3px;
+  background: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+  /*remove default tick marks*/
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #777;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #ddd;
+}
+
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #60A9FF;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #888;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #ccc;
+}
+
+#submit {
+	background-color: #60A9FF;
+	color: white;
+	border: 0;
+	width: 150px;
+	height: 40px;
+	border-radius: 10px 10px 10px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+#sexe {
+	display: flex;
+
+}
+
+#sexe img {
+	width: 40px;
+	padding-left: 40px;
+
+}
+
+#formbis {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 80%;
+}
+
+#boutonp4bis {
+	display: flex;
+	justify-content: center;
+}
+
+#formbis label {
+	text-transform: uppercase;
+}
+
+
+#formbis ul {
+	list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+.required {
+	display: flex;
+    align-items: center;
+
+}
+
+#formbis ul li{
+
+    margin-right: 20px;
+    background-color: #F7F8FF;
+    border-radius: 100px;
+    padding: 15px;
+
+}
+
+#formbis input {
+
+	border: 0;
+	border-bottom: 1px solid grey;
+	width: 500px;
+	height: 30px;
+	margin-left: 20px;
+
+
+}
+
+#formbis ul li:hover {
+
+	background-color: #63ABFC;
+	color: white;
+
+}
+
+#milieu4bis {
+	display: flex;
+    flex-direction: column;
+    align-items: space;
+    margin-bottom: 300px;
+    margin-right: 20px;
+}
+
+#milieu4bis div {
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.chambre-ter{
+	    display: flex;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.chambre-ter input{
+    height: 30px;
+    margin-left: 50px;
+    border: solid lightgray 1px;
+    width: 160px;
+    border-radius: 10px;
+}
+
+.chambre-ter p{
+	font-weight: bold;
+}
+
+.alerte-ter{
+	margin-left: 40px;
+	margin-top: 80px;
+
+}
+
+.alerte-p{
+	font-weight: bold;
+}
+
+.section-ter{
+	display: flex;
+	flex-direction: column;
+	margin-left: 40px;
+}
+
+.type-ter{
+	display: flex;
+	align-items: center;
+}
+
+.type-ter p{
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+.gauche-ter {
+	margin-left: 40px;
+	color: grey;
+
+}
+
+.type-ter input {
+	border: solid lightgray 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+
+}
+
+.all-ter {
+	margin-top: 50px;
+	display: flex;
+}
+
+.active {
+	border: solid #63ABFC 1px;
+}
+
+.butt-ter{
+	width: 150px;
+    position: absolute;
+    left: 50%;
+    margin-top: 100px;
+}

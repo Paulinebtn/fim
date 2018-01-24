@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>FIM, l'innovation au profil de la santé...</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="page-1">
+	<div class="pop-up">
+		<div id="pop-up01">
+			<div class="onglet">
+				<div class="alerte01">Chambre 01 00:00</div>
+				<div class="alerte02">Chambre 02 00:00</div>
+				<div class="alerte03">Chambre 03 00:00</div>
+			</div>
+			<div>alerte</div>
+			<img src="icon/chute.svg">
+			<div>chute</div>
+			<div>
+				<button id="prise-charge">Je prend en charge</button>
+				<button id="occupe">Je suis occupée</button>
+			</div>
+		</div>
+		<div id="pop-up02">
+			<form>
+				<div>
+					<p>La personne est-elle blessé?</p>
+					<div>
+						<input type="radio" name="choix1" value="oui">
+						<label>Oui</label>
+						<input type="radio" name="choix1" value="non">
+						<label>Non</label>
+					</div>
+				</div>
+				<div>
+					<p>Cette personne mérite-elle un suivi médical?</p>
+					<div>
+						<input type="radio" name="choix2" value="oui">
+						<label>Oui</label>
+						<input type="radio" name="choix2" value="non">
+						<label>Non</label>
+					</div>
+				</div>
+				<div>
+					<p>Résumé des faits et des conséquences de la chute :</p>
+					<textarea></textarea>
+				</div>
+				<input type="button" value="Envoyer mon compte rendu">
+			</form>
+		</div>
+	</div>
+	<nav>
+		<div>
+			<h2>FIM</h2>
+		</div>
+		<div id="nav-ajout">
+			<ul>
+			<li><a href="#">Données personnelles</a></li>
+			<li><a href="#">Données médicales</a></li>
+			<li><a href="#">Activités associés</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<aside>
+			<ul>
+				<li>
+					<a>
+						<img src="icon/activity.svg">
+						<span>Activité en cours</span>
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="icon/journal.svg">
+						<span>Journal des événements</span>
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="icon/home.svg">
+						<span>Données du logement</span>
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="icon/ajouter.svg">
+						<span>Ajouter un résident</span>
+					</a>
+				</li>
+			</ul>
+		</aside>
+<section class="-section-ter">
+
+		<div class="chambre-ter">
+			<p>NUMERO DE CHAMBRE</p>
+			<input type="text" name="text">
+		</div>
+
+		<div class="alerte-ter">
+			<p class="alerte-p">REGLAGES DES ALERTES</p>
+		</div>
+		<div class="all-ter">	
+			<div class="gauche-ter">
+				<div class="type-ter">
+					<input type="text" name="checkbox" class="active">
+					<p>Sortie de la chambre</p>
+				</div>
+				<div class="type-ter">
+					<input type="text" name="checkbox">
+					<p>L'intrustion dans une chambre</p>
+				</div>
+				<div class="type-ter">
+					<input type="text" name="checkbox">
+					<p>Le nombre de passage dans la salle de bain</p>
+				</div>
+			</div>
+			<div class="gauche-ter">
+				<div class="type-ter">
+					<input type="text" name="checkbox">
+					<p>Le nombre de levée dans la nuit</p>
+				</div>
+				<div class="type-ter">
+					<input type="text" name="checkbox">
+					<p>Le temps de déambulation</p>
+				</div>
+				<div class="type-ter">
+					<input type="text" name="checkbox">
+					<p>Le temps dans la salle de bain</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="butt-ter">
+	    <button type="submit" id="submit">
+	      Valider
+	    </button>
+	  </div>
+  </div>
+</div>
+</body>
+</html>
