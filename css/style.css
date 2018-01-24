@@ -107,10 +107,6 @@ form .button {
     z-index: 1;
 }
 
-#pop-up01 {
-	display: none;
-}
-
 .pop-up-active {
 	display: flex !important;
 }
@@ -831,6 +827,10 @@ ul.days {
     color: black;
     margin-bottom: 10px;
     border-bottom: 1px solid lightgray;
+}
+
+li.griser {
+	color: lightgrey;
 }
 
 .days li {
