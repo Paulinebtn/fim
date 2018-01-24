@@ -8,6 +8,11 @@ body {
 	height: 100%;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 /* ------------ PAGE 1 : ACCUEIL --------------- */
 
 .accueil {
@@ -58,14 +63,19 @@ body {
 }
 
 form .button {
-	width: 62%;
-	padding: 24px;
+	width: 60%;
+	height: 50px;
+	padding: 5px;
 	background-color: #60A9FF;
 	color: white;
 	font-size: 15px;
 	border: 0;
 	border-radius: 7px;
 	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
 }
 
 .accueil p {
@@ -403,6 +413,11 @@ form .button {
 	border-right: 4px solid #60A9FF;
 }
 
+.focus-fonce {
+	background-color: #191B21;
+	border-right: 4px solid #60A9FF;
+}
+
 .page-1 > main {
 	display: flex;
 	height: 87%;
@@ -713,7 +728,7 @@ form .button {
 .page-2 aside ul {
 	margin: 0;
 	padding: 0;
-	height: 50%;
+	height: 40%;
 	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
