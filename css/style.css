@@ -1018,6 +1018,45 @@ div#evenements > div > p:nth-child(3) {
 	justify-content: space-between;
 }
 
+/* graphique bleu = frise */
+
+.legende {
+	display: flex;
+	background-color: red;
+}
+
+.legende > div:first-child {
+	width: 65%;
+	background-color: blue;
+}
+
+.activ {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+
+.activ > div:first-child {
+	width: 40px;
+	height: 8px;
+	margin-right: 8px;
+}
+
+.activ > div:last-child {
+	font-size: 13px;
+}
+
+.blue {
+	background-color: #60A9FF;
+}
+
+.blue-light {
+	
+	background-color: #C5D9EF;
+}
+
+/* graphique circulaires */
+
 .graphiques > div:last-child > div {
 	background-color:white;
 	border-radius: 5px;
@@ -1033,7 +1072,7 @@ div#evenements > div > p:nth-child(3) {
 }
 
 .canvas {
-	height: 80%;
+	height: 85%;
 }
 
 .graph-text > div{
