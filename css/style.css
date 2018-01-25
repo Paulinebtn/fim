@@ -1022,7 +1022,49 @@ div#evenements > div > p:nth-child(3) {
 	background-color:white;
 	border-radius: 5px;
 	width: 49%;
-	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.graph-text {
+	height: 85%;
+	padding-left: 20px;
+}
+
+.canvas {
+	height: 80%;
+}
+
+.graph-text > div{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.graph-text p {
+	font-size: 13px;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+#myChart {
+	width: 260px !important;
+	height: 260px !important;
+}
+
+#myChart2 {
+	width: 260px !important;
+	height: 260px !important;
+}
+
+canvas {
+	display: flex !important;
+}
+
+.canvas {
+	display: flex;
+	justify-content: flex-end
 }
 
 /* ------------------ page 4 : Ajout d'un résident --------------------- */

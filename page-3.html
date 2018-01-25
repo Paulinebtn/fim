@@ -121,19 +121,32 @@
 			
             <section class="graphiques">
                 <div>
-						<canvas id="myChart3"></canvas>
+					<canvas id="myChart3"></canvas>
                 </div>
                 <div>
                     <div>
-						<canvas id="myChart"></canvas>
+						<div class="graph-text">
+							<div>activité / inactivité</div>
+							<p>9h d'activité</p>
+							<p>15h d'inactivité</p>
+						</div>
+						<div class="canvas">
+							<canvas id="myChart"></canvas>
+						</div>
                     </div>
                     <div>
-                        <canvas id="myChart2"></canvas>
+						<div class="graph-text">
+							<div>répartition de l'activité</div>
+							<p>9h d'activité en salle de bain</p>
+							<p>15h d'activité en chambre</p>
+						</div>
+						<div class="canvas">
+							<canvas id="myChart2"></canvas>
+						</div>
                     </div>
                 </div>
             </section>
         </article>
-<<<<<<< Updated upstream
 	</main>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 	<script>
@@ -144,12 +157,11 @@
 
 			// The data for our dataset
 			data: {
-				labels: ["January", "February"],
+				labels: ["activité", "inactivité"],
 				datasets: [{
 					label: "My First dataset",
-					backgroundColor: 'rgb(255, 99, 132)',
-					borderColor: 'rgb(255, 99, 132)',
-					data: [40, 60],
+					backgroundColor: ['#C5D9EF', '#60A9FF'],
+					data: [75, 25],
 				}]
 			},
 
@@ -164,12 +176,11 @@
 
 			// The data for our dataset
 			data: {
-				labels: ["January", "February"],
+				labels: ["salle de bain", "chambre"],
 				datasets: [{
 					label: "My First dataset",
-					backgroundColor: 'rgb(255, 99, 132)',
-					borderColor: 'rgb(255, 99, 132)',
-					data: [40,60],
+					backgroundColor: ['#FDD9B0' ,'#FFAC5A'],
+					data: [75,25],
 				}]
 			},
 
@@ -177,9 +188,7 @@
 			options: {}
 		});
 	</script>
-=======
     </main>
-    <script src="js/fim.js"></script>
->>>>>>> Stashed changes
+    <!--<script src="js/fim.js"></script>-->
 </body>
 </html>
