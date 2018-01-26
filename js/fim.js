@@ -5,41 +5,38 @@ var popUpAct = document.getElementsByClassName('pop-up');
 	}, 3000); 
 
 
-var ongletTime = document.getElementsByClassName('onglet');
-	console.log(ongletTime);
+var onglet = document.querySelectorAll('.alerte01');
 
-var time_start = setInterval(function(){
-	var time = 0;
-	this.ongletTime[0] = time + 1; 
-	}, 1000);
+var btn = document.querySelector('#prise-charge');
 
+var time_start;
+var time = 0;
 
-// var ongletTime = document.getElementsByClassName('onglet');
-// var btn = document.querySelectorAll('#occupe');
+time_start = setInterval(function () {
+    time = time + 1;
 
-// var time_start;
-// var time = 0;
+    var minutes = Math.floor(time / 60);
+    var seconds = time % 60;
 
-//     time_start = setInterval(function () {
-//         popUpAct[1].time = time + 1;
+    if (minutes < 10) {
+        minutes = '0' + minutes;
+    }
 
-//         var minutes = Math.floor(time / 60);
-//         var seconds = time % 60;
+    if (seconds < 10) {
+        seconds = '0' + seconds;
+    }
 
-//         if (minutes < 10) {
-//             minutes = '0' + minutes;
-//         }
+    var text = 'Chambre 01 ' + minutes + ':' + seconds;
 
-//         if (seconds < 10) {
-//             seconds = '0' + seconds;
-//         }
+    onglet[0].textContent = text;
+}, 1000);
 
-//         var text = minutes + ':' + seconds;
-
-//         time.textContent = text;
-//     }, 1000);
-
-
+btn.addEventListener('onclick', function() {
+    console.log('je suis stop');
+    clearInterval(time_start);
+    time = 0;
+    time_start = undefined;
+});
 
 
 
