@@ -1022,12 +1022,18 @@ div#evenements > div > p:nth-child(3) {
 
 .legende {
 	display: flex;
-	background-color: red;
 }
 
 .legende > div:first-child {
-	width: 65%;
-	background-color: blue;
+	width: 60%;
+}
+
+.legende > div:nth-child(2) {
+	width: 20%;
+}
+
+.legende > div:last-child {
+	width: 20%;
 }
 
 .activ {
@@ -1038,12 +1044,12 @@ div#evenements > div > p:nth-child(3) {
 
 .activ > div:first-child {
 	width: 40px;
-	height: 8px;
+	height: 12px;
 	margin-right: 8px;
 }
 
 .activ > div:last-child {
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .blue {
@@ -1055,6 +1061,31 @@ div#evenements > div > p:nth-child(3) {
 	background-color: #C5D9EF;
 }
 
+.chute-graph {
+	display: flex;
+	height: 30px;
+	align-items: center;
+}
+
+.chute-graph > div:last-child {
+	font-size: 14px;
+}
+
+#red {
+	width: 45px;
+	height: 6px;
+	background-color: #FF0F4F;
+	margin-right: 8px;
+}
+
+.pb-graph {
+	display: flex;
+	flex-direction: column;
+}
+.pb-graph > div > div:first-child {
+	width: 45px;
+	height: 6px;
+}
 /* graphique circulaires */
 
 .graphiques > div:last-child > div {
