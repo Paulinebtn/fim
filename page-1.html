@@ -6,7 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/start/jquery-ui.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body class="page-1">
 	<div class="pop-up">
@@ -58,10 +61,10 @@
 		</div>
 		<form action="/search" class="search-barre" method="get">
 			<i class="fa fa-search" aria-hidden="true"></i>
-			<input type="text" placeholder="Rechercher une chambre ou un résident...">
+			<input id="tags" type="text" placeholder="Rechercher une chambre ou un résident...">
 		</form>
 		<ul>
-			<li class="touch-event-1"><img src="icon/event-actuel.svg"></li>
+			<li class="touch-event-1 touch-activate"><img src="icon/event-actuel.svg"></li>
 			<li class="touch-event-2"><img src="icon/event-passe.svg"></li>
 		</ul>
 	</nav>
@@ -285,6 +288,20 @@
 			</section>
 		</article>
 	</main>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+    var availableTags = [
+     "Dupont chambre 202",
+     "Dutuil chambre 803",
+     "Duper chambre 602"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
 	<script src="js/fim.js"></script>
 </body>
 </html>
