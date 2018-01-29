@@ -1190,6 +1190,86 @@ div#evenements > div > p:nth-child(3) {
 	background-color: red;
 }
 
+.frise {
+	height: 135px;
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#frise-bleu {
+	width: 100%;
+	display: flex;
+}
+
+#frise-bleu > div:first-child {
+	width: 20%;
+	background-color: #60A9FF;
+	height: 55px;
+}
+
+#frise-bleu > div:nth-child(2) {
+	width: 40%;
+	background-color: #C5D9EF;
+	height: 55px;
+}
+
+#frise-bleu > div:last-child {
+	width: 40%;
+	background-color: #60A9FF;
+	height: 55px;
+}
+
+#heure {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	font-size: 13px;
+	color: #4D4E58;
+	position: relative;
+	top: 35px;
+}
+
+#heure-marquee {
+	width: 100%;
+}
+
+#heure-marquee > div:first-child {
+	display: flex;
+	position: relative;
+	top: -26px;
+}
+
+#heure-marquee > div:last-child {
+	display: flex;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+#heure-marquee > div:first-child > div {
+	height: 80px;
+	width: 5px;
+	background-color: #FF0F4F;
+}
+
+#first-event {
+	margin-left: 80px;
+}
+
+#second-event {
+	margin-left: 470px;	
+}
+
+#first-heure {
+	margin-left: 66px;
+}
+
+#second-heure {
+	margin-left: 432px;	
+}
+
 /* graphique circulaires */
 
 .graphiques > div:last-child > div {
