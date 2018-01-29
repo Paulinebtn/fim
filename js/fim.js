@@ -7,8 +7,6 @@ var popUpAct = document.getElementsByClassName('pop-up');
 
 var onglet = document.querySelectorAll('.alerte01');
 
-var btn = document.querySelector('#prise-charge');
-
 var time_start;
 var time = 0;
 
@@ -19,7 +17,7 @@ time_start = setInterval(function () {
     var seconds = time % 60;
 
     if (minutes < 10) {
-        minutes = '0' + minutes;
+        minutes = '0' + minutes; 
     }
 
     if (seconds < 10) {
@@ -31,14 +29,14 @@ time_start = setInterval(function () {
     onglet[0].textContent = text;
 }, 1000);
 
-btn.addEventListener('onclick', function() {
-    console.log('je suis stop');
-    clearInterval(time_start);
-    time = 0;
-    time_start = undefined;
-});
 
+var btn = document.querySelector('#prise-charge');
 
+var popUpInact = document.getElementsByClassName('pop-up');
 
+btn.onclick = function() {
+    popUpInact[0].classList.add('.pop-up-inactive');
+    popUpInact[0].toggle('.pop-up');
+   // popUpInact[0].classList.add = 'pop-up-inactive';
+};
 
-          

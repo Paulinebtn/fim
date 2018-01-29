@@ -8,134 +8,82 @@
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="page-1">
-	<div class="pop-up">
-		<div id="pop-up01">
-			<div class="onglet">
-				<div class="alerte01">Chambre 01 00:00</div>
-				<div class="alerte02">Chambre 02 00:00</div>
-				<div class="alerte03">Chambre 03 00:00</div>
-			</div>
-			<div>alerte</div>
-			<img src="icon/chute.svg">
-			<div>chute</div>
-			<div>
-				<button id="prise-charge">Je prend en charge</button>
-				<button id="occupe">Je suis occupée</button>
-			</div>
-		</div>
-		<div id="pop-up02">
-			<form>
-				<div>
-					<p>La personne est-elle blessé?</p>
-					<div>
-						<input type="radio" name="choix1" value="oui">
-						<label>Oui</label>
-						<input type="radio" name="choix1" value="non">
-						<label>Non</label>
-					</div>
-				</div>
-				<div>
-					<p>Cette personne mérite-elle un suivi médical?</p>
-					<div>
-						<input type="radio" name="choix2" value="oui">
-						<label>Oui</label>
-						<input type="radio" name="choix2" value="non">
-						<label>Non</label>
-					</div>
-				</div>
-				<div>
-					<p>Résumé des faits et des conséquences de la chute :</p>
-					<textarea></textarea>
-				</div>
-				<input type="button" value="Envoyer mon compte rendu">
-			</form>
-		</div>
-	</div>
-	<nav>
-		<div>
-			<h2>FIM</h2>
-		</div>
-		<div id="nav-ajout">
-			<ul>
-			<li><a href="#">Données personnelles</a></li>
-			<li><a href="#">Données médicales</a></li>
-			<li><a href="#">Activités associés</a></li>
-			</ul>
-		</div>
-	</nav>
-	<main>
-		<aside>
-			<ul>
-				<li>
-					<a>
-						<img src="icon/activity.svg">
-						<span>Activité en cours</span>
-					</a>
-				</li>
-				<li>
-					<a>
-						<img src="icon/journal.svg">
-						<span>Journal des événements</span>
-					</a>
-				</li>
-				<li>
-					<a>
-						<img src="icon/home.svg">
-						<span>Données du logement</span>
-					</a>
-				</li>
-				<li>
-					<a>
-						<img src="icon/ajouter.svg">
-						<span>Ajouter un résident</span>
-					</a>
-				</li>
-			</ul>
-		</aside>
-<div id="formbis">
-	<div class="required" id="ajouterform">
-    <label for="prenom">Groupe sanguin</label>
-
+<body class="page-4">
+    <nav>
+      <div>
+        <h2>FIM</h2>
+      </div>
     <ul>
-    	<li>A+</li>
-    	<li>AB+</li>
-    	<li>A-</li>
-    	<li>AB-</li>
-    	<li>B+</li>
-    	<li>B-</li>
-    	<li>O-</li>
-    	<li>O+</li>
+        <li class="touch-formbis-1"><a href="page-4.html">Données personnelles</a></li>
+        <li class="touch-formbis-2"><a href="page4bis.html">Données médicales</a></li>
+        <li class="touch-formbis-3"><a href="page4ter.html">Activités associées</a></li>
     </ul>
-    
-    </div>
-
-  <div id="milieu4bis">
-	<div class="required" id="ajouterform">
-    <label for="prenom">Allergies</label>
-    <input id="allergie" type="text">
-    </div>
-    <div class="required" id="ajouterform">
-    <label for="prenom">Problèmes de santé</label>
-    <input id="probleme" type="text">
-    
-  </div>
-  <div class="required" id="ajouterform">
-    <label for="prenom">Suivi particulier</label>
-    <input id="suivi" type="text">
-    
-  </div><div class="required" id="ajouterform">
-    <label for="prenom">Médicaments</label>
-    <input id="medicament" type="text">
-    </div>
-
- </div>
-
-  <div id="boutonp4bis">
-    <button type="submit" id="submit">
-      Valider
-    </button>
-  </div>
-</div>
+    </nav>
+    <main>
+      <aside>
+        <ul>
+          <li>
+            <a href="page-1.html">
+              <img src="icon/activity.svg">
+              <span>Activité en cours</span>
+            </a>
+          </li>
+          <li>
+            <a href="page-2.html">
+              <img src="icon/journal.svg">
+              <span>Journal des événements</span>
+            </a>
+          </li>
+          <li>
+            <a href="page-3.html">
+              <img src="icon/home.svg">
+              <span>Données du logement</span>
+            </a>
+          </li>
+          <li class='focus-fonce'>
+            <a href="page-4.html">
+              <img src="icon/ajouter.svg">
+              <span>Ajouter un résident</span>
+            </a>
+          </li>
+        </ul>
+        </aside>
+        <section id="donnees-medicales">
+        	<form class="sectionform2">
+	        	<div class="grp-sanguin">
+	        		<P>GROUPE SANGUIN</P>
+	        		<div class="all-btn">
+	        			<button class="sanguin-blue">A+</button>
+				        <button class="sanguin-gris">AB+</button>
+				        <button class="sanguin-gris">A-</button>
+				        <button class="sanguin-gris">AB-</button>
+				        <button class="sanguin-gris">B+</button>
+				        <button class="sanguin-gris">O+</button>
+				        <button class="sanguin-gris">B-</button>
+				        <button class="sanguin-gris">0-</button>
+	        		</div>
+			    </div>
+			    <div class="allergies">
+			    	<label for="tags">ALLERGIES</label>
+			    	<input type="tags" name="allergies" placeholder="ajouter une allergie" id="tags">
+			    </div>
+				<div class="sante">
+					<label for="tags">PROBLÈME(S) DE SANTÉ</label>
+					<input type="text" name="sante">
+				</div>
+				<div class="suivi">
+					<label for="tags">SUIVI PARTICULIER</label>
+					<input type="text" name="suivi">
+				</div>
+				<div class="medicaments">
+					<label for="tags">MÉDICAMENTS</label>
+					<input type="text" name="medicaments" placeholder="ajouter un médicaments">
+				</div>
+        	</form>
+        	<a href="page4ter.html">
+                <input type="button" name="valider" value="Valider" class="btn1">
+            </a>
+        </section>
+    </main>
 </body>
 </html>

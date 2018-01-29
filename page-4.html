@@ -8,201 +8,144 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="page-1">
-  <div class="pop-up">
-    <div id="pop-up01">
-      <div class="onglet">
-        <div class="alerte01">Chambre 01 00:00</div>
-        <div class="alerte02">Chambre 02 00:00</div>
-        <div class="alerte03">Chambre 03 00:00</div>
-      </div>
-      <div>alerte</div>
-      <img src="icon/chute.svg">
-      <div>chute</div>
+
+<body class="page-4">
+    <nav>
       <div>
-        <button id="prise-charge">Je prend en charge</button>
-        <button id="occupe">Je suis occupée</button>
+        <h2>FIM</h2>
       </div>
-    </div>
-    <div id="pop-up02">
-      <form>
-        <div>
-          <p>La personne est-elle blessé?</p>
-          <div>
-            <input type="radio" name="choix1" value="oui">
-            <label>Oui</label>
-            <input type="radio" name="choix1" value="non">
-            <label>Non</label>
-          </div>
-        </div>
-        <div>
-          <p>Cette personne mérite-elle un suivi médical?</p>
-          <div>
-            <input type="radio" name="choix2" value="oui">
-            <label>Oui</label>
-            <input type="radio" name="choix2" value="non">
-            <label>Non</label>
-          </div>
-        </div>
-        <div>
-          <p>Résumé des faits et des conséquences de la chute :</p>
-          <textarea></textarea>
-        </div>
-        <input type="button" value="Envoyer mon compte rendu">
-      </form>
-    </div>
-  </div>
-  <nav>
-    <div>
-      <h2>FIM</h2>
-    </div>
-    <div id="nav-ajout">
-      <ul>
-      <li><a href="#">Données personnelles</a></li>
-      <li><a href="#">Données médicales</a></li>
-      <li><a href="#">Activités associés</a></li>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <aside>
-      <ul>
-        <li>
-          <a href="page-1.html">
-            <img src="icon/activity.svg">
-            <span>Activité en cours</span>
-          </a>
-        </li>
-        <li>
-          <a href="page-2.html">
-            <img src="icon/journal.svg">
-            <span>Journal des événements</span>
-          </a>
-        </li>
-        <li>
-          <a href="page-3.html">
-            <img src="icon/home.svg">
-            <span>Données du logement</span>
-          </a>
-        </li>
-        <li>
-          <a href="page-4.html">
-            <img src="icon/ajouter.svg">
-            <span>Ajouter un résident</span>
-          </a>
-        </li>
-      </ul>
-    </aside>
-  <form id="ajout" action="#">
-
-<div class="sectionform">
-  <span id="sexe">
-    <div class="required">
-    <label for="nom">Sexe</label>
-   </div>
-   <div>
-    <a><img id="girl" src="icon/girl.svg"></a>
-    <a><img id="man" src="icon/man.svg"></a>
-    
-  </div>
-  
-  </span>
-  <span>
-  <div class="required">
-    <label for="nom">Nom</label>
-    <input id="nom" type="text">
-    
-  </div>
-  <div class="required" id="ajouterform">
-    <label for="prenom">Prénom</label>
-    <input id="prenom" type="text">
-    
-  </div>
-</span>
-<span >
-  <label for="age">Age</label>
-
-  <p class="range-field" id="ajouterform">
-      <input type="range" id="test5" min="50" max="120" />
-    </p>
-</span>
-<span>
-  <div class="required">
-    <label for="adresse">Adresse</label>
-    <label>N°</label>
-    <input id="numero" type="text">
-  <label>Rue</label>
-    <input id="adresse" type="text">
-    
-  </div>
-  <div class="required" id="ajouterform">
-    <label for="postal">Code postal</label>
-    <input id="postal" type="text">
-    
-  </div>
-</span>
-</div>
-<div>
-<div class="sectionform">
-  <h2>1ère personne à contacter en cas d'urgence</h2> 
-
-  <span>
-  <div class="required">
-    <label for="nom">Nom</label>
-    <input id="nom" type="text">
-    
-  </div>
-  <div class="required" id="ajouterform">
-    <label for="prenom">Prénom</label>
-    <input id="prenom" type="text">
-    
-  </div>
-</span> 
-<span>
-  <div class="required">
-    <label for="email">Mail</label>
-    <input id="email" type="text">
-    
-  </div>
-  <div class="required" id="ajouterform">
-    <label for="ville">N° Telephone</label>
-    <input id="ville" type="text">
-  </div>
-</div>
-</span>
-<div class="sectionform">
-  <h2>2ème personne à contacter en cas d'urgence</h2> 
-  <span>
-  <div class="required">
-    <label for="nom">Nom</label>
-    <input id="nom" type="text">
-    
-  </div>
-  <div class="required" id="ajouterform">
-    <label for="prenom">Prénom</label>
-    <input id="prenom" type="text">
-    
-  </div>
-</span> 
-<span>
-  <div class="required">
-    <label for="email">Mail</label>
-    <input id="email" type="text">
-    
-  </div>
-  <div class="required" id="ajouterform">
-    <label for="ville">N° Telephone</label>
-    <input id="ville" type="text">
-  </div>
-</div>
-</span>
-</div>
-
-  <div>
-    <button type="submit" id="submit">
-      Valider
-    </button>
-  </div>
-</form>
+    <ul>
+        <li class="touch-form-1"><a href="page-4.html">Données personnelles</a></li>
+        <li class="touch-form-2"><a href="page4bis.html">Données médicales</a></li>
+        <li class="touch-form-3"><a href="page4ter.html">Activités associées</a></li>
+    </ul>
+    </nav>
+    <main>
+      <aside>
+        <ul>
+          <li>
+            <a href="page-1.html">
+              <img src="icon/activity.svg">
+              <span>Activité en cours</span>
+            </a>
+          </li>
+          <li>
+            <a href="page-2.html">
+              <img src="icon/journal.svg">
+              <span>Journal des événements</span>
+            </a>
+          </li>
+          <li>
+            <a href="page-3.html">
+              <img src="icon/home.svg">
+              <span>Données du logement</span>
+            </a>
+          </li>
+          <li class='focus-fonce'>
+            <a href="page-4.html">
+              <img src="icon/ajouter.svg">
+              <span>Ajouter un résident</span>
+            </a>
+          </li>
+        </ul>
+        </aside>
+        <section id="donnees-perso">
+            <div class="section-sexe">
+                <div>
+                    <div class="sexe">SEXE</div>
+                    <div id="femme">
+                        <img src="icon/girl.svg">
+                        <div>femme</div>
+                    </div>
+                    <div id="homme">
+                        <img src="icon/man.svg">
+                        <div>homme</div>
+                    </div>
+                </div>
+            </div>
+            <form class="sectionform">
+                <div class="nom-prenom">
+                    <div class="nom">
+                        <label>NOM</label>
+                        <input type="text" name="nom">
+                    </div>
+                    <div class="nom">
+                        <label>PRÉNOM</label>
+                        <input type="text" name="prenom">
+                    </div>
+                </div>
+                <div class="age">
+                    <div class="age-range">
+                        <label>AGE</label>
+                        <input type="range" id="range" min="50" max="170"/>
+                    </div>
+                    <div class="nm-age">
+                        <input type="text" name="age" placeholder="40">
+                        <label>ans</label>
+                    </div>
+                </div>
+                <div class="adress">
+                    <div>ADRESSE</div>
+                    <div class="number">
+                        <label>n°</label>
+                        <input type="text" name="number">
+                    </div>
+                    <div class="rue">
+                        <label>rue</label>
+                        <input type="text" name="rue">
+                    </div>
+                    <div class="postal">
+                        <label>code postal</label>
+                        <input type="text" name="postale">
+                    </div>
+                </div>
+                <p class="appel">1ère PERSONNE À CONTACTER EN CAS D’URGENCE</p>
+                <div class="nom-prenom">
+                    <div class="nom">
+                        <label>NOM</label>
+                        <input type="text" name="nom">
+                    </div>
+                    <div class="nom">
+                        <label>PRÉNOM</label>
+                        <input type="text" name="prenom">
+                    </div>
+                </div>
+                <div class="mail-tel">
+                    <div class="mail">
+                        <label>MAIL</label>
+                        <input type="text" name="mail">
+                    </div>
+                    <div class="tel">
+                        <label>N°TÉLÉPHONE</label>
+                        <input type="text" name="tel">
+                    </div>
+                </div>
+                <p class="appel">2ème PERSONNE À CONTACTER EN CAS D’URGENCE</p>
+                <div class="nom-prenom">
+                    <div class="nom">
+                        <label>NOM</label>
+                        <input type="text" name="nom">
+                    </div>
+                    <div class="nom">
+                        <label>PRÉNOM</label>
+                        <input type="text" name="prenom">
+                    </div>
+                </div>
+                <div class="mail-tel">
+                    <div class="mail">
+                        <label>MAIL</label>
+                        <input type="text" name="mail">
+                    </div>
+                    <div class="tel">
+                        <label>N°TÉLÉPHONE</label>
+                        <input type="text" name="tel">
+                    </div>
+                </div>
+                <a href="page4bis.html">
+                    <input type="button" name="valider" value="Valider" class="btn1">
+                </a>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
