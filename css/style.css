@@ -531,6 +531,10 @@ form .button {
 	background-color: #FFC15D !important;
 }
 
+.frise > div:first-child {
+
+}
+
 
 /* menu droit */
 
@@ -1026,12 +1030,22 @@ div#evenements > div > p:nth-child(3) {
 
 .legende {
 	display: flex;
-	background-color: red;
+	font-size: 13px;
 }
 
 .legende > div:first-child {
-	width: 65%;
-	background-color: blue;
+	width: 60%;
+}
+
+.legende > div:nth-child(2) {
+	width: 20%;
+	display: flex;
+	height: 25px;
+	align-items: center;
+}
+
+.legende > div:last-child {
+	width: 20%;
 }
 
 .activ {
@@ -1057,6 +1071,25 @@ div#evenements > div > p:nth-child(3) {
 .blue-light {
 	
 	background-color: #C5D9EF;
+}
+
+#red {
+	width: 40px;
+    height: 5px;
+	margin-right: 8px;
+	background-color: #FF0F4F;
+}
+
+.col-right-legende > div {
+	display: flex;
+	align-items: center;
+}
+
+.col-right-legende > div > div:first-child {
+	width: 40px;
+    height: 5px;
+	margin-right: 8px;
+	background-color: red;
 }
 
 /* graphique circulaires */
