@@ -938,7 +938,7 @@ div#evenements > div > p:nth-child(3) {
 
 .today {
 	top: -129px;
-	background-color: rgb(227, 229, 252);
+	background-color: rgb(234, 236, 255);
 	left: 88px;
 	z-index: -9;
 }
