@@ -110,7 +110,7 @@ form .button {
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 1;
+    z-index: 5;
 }
 
 .pop-up-active {
@@ -957,17 +957,18 @@ div#evenements > div > p:nth-child(3) {
     background-color: white;
     top: 150px;
     flex-direction: row;
-    justify-content: space-between;
+	justify-content: space-between;
+	box-shadow: 3px 3px 12px lightsteelblue;
 }
 
 .modCalendar>.calendar{
 	margin-left: 20px;
-	width: 50% !important;
+	width: 60% !important;
 }
 .modCalendar>.period{
 	background-color: #C5D9EF;
     padding: 20px;
-    width: 40% !important;
+    width: 30% !important;
 }
 
 .period>h4{
