@@ -1765,7 +1765,7 @@ input.btn1 {
 	position: relative;
 	display: block;
 	height: 50px;
-    width: 35%;
+    width: 25%;
     margin: auto;
     border: 0;
     background-color: #60A9FF;
@@ -1864,7 +1864,7 @@ button.sanguin-gris {
 	outline: none;
 	font-size: 14px;
 	border: none;
-    border-bottom: 0.6px solid grey;
+	border-bottom: 1px solid #c8c8ca;
     font-weight: 400;
     padding-bottom: 7px;
 }
@@ -1874,7 +1874,7 @@ button.sanguin-gris {
 	outline: none;
 	font-size: 14px;
 	border: none;
-    border-bottom: 0.6px solid grey;
+	border-bottom: 1px solid #c8c8ca;
     font-weight: 400;
     padding-bottom: 7px;
 }
@@ -1897,7 +1897,7 @@ div.tagsinput{
 	height: 35px !important;
 	overflow:hidden !important;
 	border: none !important;
-	border-bottom: 1px solid grey !important;
+	border-bottom: 1px solid #c8c8ca !important;
 }
 div.tagsinput div{
 	margin: 0 !important;
@@ -1905,6 +1905,17 @@ div.tagsinput div{
 
 div.tagsinput input{
 	width: auto !important;
+	font-size: 14px !important;
+}
+
+div.tagsinput span.tag {
+	background: white !important;
+    color: #60A9FF !important;
+    border: 1px solid #60A9FF !important;
+}
+
+div.tagsinput span.tag a {
+	color: #60A9FF !important;
 }
 
 /* ------------------ page 4 ter : Ajout d'un résident --------------------- */
@@ -1944,7 +1955,7 @@ div.tagsinput input{
 }
 
 .num-chambre input {
-	border: 2px solid lightgrey;
+	border: 1px solid #c8c8ca;
 	outline: none;
 	font-size: 16px;
 	text-align: center;
