@@ -743,7 +743,7 @@ form .button {
 .page-2 aside {
 	background-color: #373843;
 	width: 20%;
-	height: calc(100vh + 100px);
+	height: calc(88vh + 100px);
 }
 
 .page-2 aside img {
@@ -806,6 +806,7 @@ section#calendar {
 	width: 100%;
 	overflow-x: auto;
 	flex-wrap: nowrap;
+	height: 316px;
 }
 
 .calendar-nov {
@@ -923,6 +924,55 @@ div#evenements > div > p:first-child {
 
 div#evenements > div > p:nth-child(3) {
 	font-weight: 700;
+}
+
+/* bulle color */
+
+.bulle {
+	height: 38px;
+	width: 38px;
+	position: relative;
+	background-color: red;
+	border-radius: 50%;
+}
+
+.today {
+	top: -129px;
+	background-color: rgb(227, 229, 252);
+	left: 88px;
+	z-index: -9;
+}
+
+.date-chute {
+	top: -211px;
+	background-color: #FF0F4F;
+	left: 1px;
+	z-index: -9;
+}
+
+.date-deamb {
+ 	background-color: #9b85e6;
+	top: -217px;
+	left: 261px;
+	z-index: -9;
+}
+
+.date-intru {
+	background-color: #43d98e;
+	top: -124px;
+    left: 87px;
+	z-index: -9;
+}
+
+.date-sdb {
+	background-color: #ffc15d;
+	top: -206px;
+    left: 175px;
+	z-index: -9;
+}
+
+.white-number {
+	color: white;
 }
 
 /* ------------------ page 3 : Données du logement --------------------- */
